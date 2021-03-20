@@ -35,7 +35,8 @@ function SliderProvider({children}: { children: ReactNode }): ReactElement {
     const timer = setTimeout(() => {
       console.log()
       next()
-    }, 6000);
+    }, 6000)
+    return () => clearTimeout(timer)
   })
 
   const numberOfIndexes = (numberOfItems: number) => {

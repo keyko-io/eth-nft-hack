@@ -31,16 +31,16 @@ function NvmProvider({ children }: {children: ReactNode}): ReactElement {
     setupNvm()
   }, [])
 
-  // useEffect(() => {
-  //   if (nvm === undefined) return
-  //   const setupConsumer = async () => {
-  //     if (nvm === undefined) return
-  //     let cons
-  //     [cons] = await nvm.accounts.list()
-  //     setConsumer(cons)
-  //   }
-  //   setupConsumer()
-  // }, [nvm])
+  useEffect(() => {
+    if (nvm === undefined) return
+    const setupConsumer = async () => {
+      if (nvm === undefined) return
+      let cons
+      [cons] = await nvm.accounts.list()
+      setConsumer(cons)
+    }
+    setupConsumer()
+  }, [nvm])
 
   useEffect(() => {
     if (nvm === undefined || consumer === undefined) return

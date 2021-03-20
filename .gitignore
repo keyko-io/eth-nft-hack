@@ -1,6 +1,14 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
+App.module.scss
+App.tsx
+config.js
+index.css
+index.tsx
+react-app-env.d.ts
+reportWebVitals.ts
+Routes.tsx
+setupTests.ts# dependencies
 /node_modules
 /.pnp
 .pnp.js
