@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.button {
+    padding: 8px;
+    padding-right: 40px;
+    padding-left: 40px;
+    // border: 2px solid   rgb(138, 170, 190, 0.5);
+    border: 0px;
+    border-radius: 50px;
+    background-color: rgb(138, 170, 190, 0.5);
+    border: 1px solid   rgb(138, 170, 190, 0.5);
+}
+
+.button:hover {
+    
+    background-color: white; 
+    cursor: pointer; 
+    border: 1px solid   rgb(138, 170, 190, 0.5);
+}
