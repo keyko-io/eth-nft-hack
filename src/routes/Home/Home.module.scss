@@ -1,0 +1,36 @@
+@import '../../styles/variables';
+
+
+.title {
+  @media (min-width: $break-point--small) {
+    text-align: left;
+  }
+}
+
+.wrapper {
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.bottomWrapper {
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.progressBar {
+  margin: auto;
+  padding-bottom: 2%;
+  width: 100%;
+  //text-align: center;
+}
+
+.barWrapper{
+  margin: auto;
+}
+
+
+
+
+
