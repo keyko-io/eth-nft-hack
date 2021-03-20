@@ -15,7 +15,7 @@
   "injection": null,
   "optimization": {
     "type": "neural_style",
-    "style_image": "brainbows-lead-neuroscientsits-to-new-insights-image.png",
+    "style_image": "ErQN_ldwTCGCNY_SS16xXUZPKIc7seWwtFS5QAaArNE.jpg",
     "style_scale": 1.0,
     "content_weight": 0,
     "tv_weight": 1e-06,
