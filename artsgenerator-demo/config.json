@@ -10,7 +10,7 @@
   "output": {
     "movie": true,
     "final_frame": false,
-    "frames": true
+    "frames": false
   },
   "injection": null,
   "optimization": {
