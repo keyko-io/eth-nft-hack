@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+.placeholder {
+    height: 75%;
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+.verticalCenter {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.progressBar {
+    margin: 20px;
+    width: 100%;
+    align-items: center;
+}
