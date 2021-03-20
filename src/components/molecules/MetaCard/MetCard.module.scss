@@ -1,0 +1,52 @@
+
+.card {
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical
+}
+
+.divider {
+    border-top: 1px solid black;
+}
+
+.grid {
+    display: grid; 
+    grid-gap: 7.5px;
+    grid-template-columns: 0.5fr 1.5fr;
+
+    margin-bottom: 10px;
+}
+
+.cat {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.metaData {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical
+}
