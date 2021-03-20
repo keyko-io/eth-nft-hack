@@ -1,0 +1,35 @@
+body {
+    background: #000000;
+    margin: 0;
+    font-family: 'Roboto';
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace; */
+    font-family: 'Roboto';
+  }
+  
+  @font-face {
+    font-family: 'ChakraPetch';
+    src: local('ChakraPetch'), url(./styles/fonts/ChakraPetch-Regular.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'ChakraPetch-bold';
+    src: local('ChakraPetch'), url(./styles/fonts/ChakraPetch-Bold.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'ChakraPetch-semiBold';
+    src: local('ChakraPetch'), url(./styles/fonts/ChakraPetch-SemiBold.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), url(./styles/fonts/Roboto-Regular.ttf) format('truetype');
+  }
+  
