@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.button {
+    height: 50px;
+    width: 50px;
+    padding: 8px;
+    border: 0px;
+    border-radius: 50%;
+    background-color: $brand-light-grey;
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: white;
+
+    border: 2px solid $brand-light-grey;
+    cursor: pointer;
+  }
