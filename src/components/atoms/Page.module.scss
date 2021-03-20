@@ -1,0 +1,12 @@
+@import '../../styles/variables';
+
+.page { 
+    height: 100vh;
+    width: 100%; 
+    position: relative;
+
+    // for sticky footer
+    display: flex;
+    min-height: calc(100vh - #{$page-frame * 2});
+    flex-direction: column;
+}
