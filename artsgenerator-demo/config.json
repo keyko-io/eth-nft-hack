@@ -1,0 +1,62 @@
+{
+  "size": [
+    720,
+    480
+  ],
+  "num_frames": 30,
+  "input": {
+    "type": "random"
+  },
+  "output": {
+    "movie": true,
+    "final_frame": false,
+    "frames": false
+  },
+  "injection": null,
+  "optimization": {
+    "type": "neural_style",
+    "style_image": "ErQN_ldwTCGCNY_SS16xXUZPKIc7seWwtFS5QAaArNE.png",
+    "style_scale": 1.0,
+    "content_weight": 0,
+    "tv_weight": 1e-06,
+    "num_iterations": [
+      700,
+      350,
+      150
+    ],
+    "num_octaves": 3,
+    "octave_ratio": 1.3,
+    "normalize_gradients": true
+  },
+  "flow": {
+    "canvas": {
+      "center": [
+        0.5,
+        0.5
+      ],
+      "shift": [
+        -0.001,
+        0.001
+      ],
+      "stretch": [
+        1.0,
+        0.999
+      ],
+      "zoom": 1.0001,
+      "expand": 0.0,
+      "rot_const": 0.0003,
+      "rot_ang": 0.0,
+      "rot_dst": 0.0,
+      "spiral_margin": 0.0,
+      "spiral_periods": 0.0,
+      "noise_rate": [
+        0.45,
+        0.43
+      ],
+      "noise_margin": [
+        1.79,
+        -1.82
+      ]
+    }
+  }
+}
