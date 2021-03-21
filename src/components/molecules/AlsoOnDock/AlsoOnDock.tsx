@@ -11,6 +11,8 @@ import {
   openSeaUrl,
   rareEffectImage,
   rareEffectGenericUrl,
+  zoraImgageUrl,
+  zoraUrl,
 } from "../../atoms/ImageUrls";
 
 import { SlideDown } from "react-slidedown";
@@ -103,9 +105,9 @@ const AlsoOnDock = () => {
                     serviceName={"VR"}
                   />
                   <AlsoOnCard
-                    serviceUrl={openSeaUrl}
-                    serviceImageUrl={openSeaImage}
-                    serviceName={"OpenSea"}
+                    serviceUrl={zoraUrl}
+                    serviceImageUrl={zoraImgageUrl}
+                    serviceName={"Zora"}
                   />
                   <AlsoOnCard
                     serviceUrl={openSeaUrl}
