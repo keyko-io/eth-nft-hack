@@ -1,12 +1,8 @@
-import React from 'react'
-import styles from './ButtonViewGrid.module.scss'
+import React from "react";
+import styles from "./ButtonViewGrid.module.scss";
 
-const ButtonViewGrid: React.FC = ({children}) => {
-    return(
-        <div className={styles.grid}>
-            {children}
-        </div>
-    )
-}
+const ButtonViewGrid: React.FC = ({ children }) => {
+  return <div className={styles.grid}>{children}</div>;
+};
 
-export default ButtonViewGrid
+export default ButtonViewGrid;

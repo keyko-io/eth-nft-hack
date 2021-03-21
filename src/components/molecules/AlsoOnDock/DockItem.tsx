@@ -1,10 +1,10 @@
-import React from 'react'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import React from "react";
+import { Card, Icon, Image } from "semantic-ui-react";
 
 interface IProps {
-  imageUrl?: string
-  link?: string
-  title?: string
+  imageUrl?: string;
+  link?: string;
+  title?: string;
 }
 
 const DockItem = ({ imageUrl, link, title }: IProps) => {
@@ -18,7 +18,9 @@ const DockItem = ({ imageUrl, link, title }: IProps) => {
       <Card.Content>
         <Card.Header>Daniel</Card.Header>
         <Card.Meta>Joined in 2016</Card.Meta>
-        <Card.Description>Daniel is a comedian living in Nashville.</Card.Description>
+        <Card.Description>
+          Daniel is a comedian living in Nashville.
+        </Card.Description>
       </Card.Content>
       <Card.Content extra>
         <a>
@@ -27,7 +29,7 @@ const DockItem = ({ imageUrl, link, title }: IProps) => {
         </a>
       </Card.Content>
     </Card>
-  )
-}
+  );
+};
 
-export default DockItem
+export default DockItem;
