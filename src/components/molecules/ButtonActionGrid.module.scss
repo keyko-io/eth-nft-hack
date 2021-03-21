@@ -1,0 +1,21 @@
+
+.grid {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+
+    margin-bottom: 5px;
+}
+
+.alignRight {
+  width: 100%;
+  text-align: right;
+}
+
+.alignLeft {
+  width: 100%;
+  text-align: left;
+}
+  
+
+

@@ -1,0 +1,31 @@
+
+.alignRight {
+    width: 100%;
+    // text-align: right;
+    position: relative;
+  }
+  
+  .alignLeft {
+    width: 100%;
+    // text-align: left;
+    position: relative;
+  }
+    
+.grid {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr 0.05fr 0.05fr 0.05fr 1fr;
+
+  margin-bottom: 5px;
+}
+
+.madeByWrapper {
+  position: relative;
+
+}
+
+.madeBy {
+  position: absolute;
+  top: 20%;
+  // transform: translate(-50%, -50%);
+}
