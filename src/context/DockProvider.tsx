@@ -5,21 +5,21 @@ import React, {
   useContext,
   useEffect,
   useState,
-} from 'react'
+} from "react";
 
 interface DockerProviderValue {
-  isActive: boolean
-  toggleActive: () => void
+  isActive: boolean;
+  toggleActive: () => void;
 }
 
-const DockerContext = createContext({} as DockerProviderValue)
+const DockerContext = createContext({} as DockerProviderValue);
 
 function DockerProvider({ children }: { children: ReactNode }): ReactElement {
-  const [isActive, setIsActive] = useState(false)
+  const [isActive, setIsActive] = useState(false);
 
   const toggleActive = () => {
-    setIsActive(!isActive)
-  }
+    setIsActive(!isActive);
+  };
 
   return (
     <DockerContext.Provider
@@ -32,8 +32,8 @@ function DockerProvider({ children }: { children: ReactNode }): ReactElement {
     >
       {children}
     </DockerContext.Provider>
-  )
+  );
 }
 
-const useDocker = (): DockerProviderValue => useContext(DockerContext)
-export { DockerProvider, useDocker, DockerContext }
+const useDocker = (): DockerProviderValue => useContext(DockerContext);
+export { DockerProvider, useDocker, DockerContext };

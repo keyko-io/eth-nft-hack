@@ -1,5 +1,4 @@
-@import '../../styles/variables';
-
+@import "../../styles/variables";
 
 .title {
   @media (min-width: $break-point--small) {
@@ -26,11 +25,6 @@
   //text-align: center;
 }
 
-.barWrapper{
+.barWrapper {
   margin: auto;
 }
-
-
-
-
-

@@ -1,16 +1,15 @@
-
 .alignRight {
-    width: 100%;
-    // text-align: right;
-    position: relative;
-  }
-  
-  .alignLeft {
-    width: 100%;
-    // text-align: left;
-    position: relative;
-  }
-    
+  width: 100%;
+  // text-align: right;
+  position: relative;
+}
+
+.alignLeft {
+  width: 100%;
+  // text-align: left;
+  position: relative;
+}
+
 .grid {
   display: grid;
   grid-gap: 40px;
@@ -21,7 +20,6 @@
 
 .madeByWrapper {
   position: relative;
-
 }
 
 .madeBy {

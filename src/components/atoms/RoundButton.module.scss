@@ -1,23 +1,22 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .button {
-    height: 50px;
-    width: 50px;
-    padding: 8px;
-    border: 0px;
-    border-radius: 50%;
-    background-color: rgb(138, 170, 190, 0.5);
+  height: 50px;
+  width: 50px;
+  padding: 8px;
+  border: 0px;
+  border-radius: 50%;
+  background-color: rgb(138, 170, 190, 0.5);
 
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    position: absolute;
-    right: 0;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  position: absolute;
+  right: 0;
 }
 
 .button:hover {
-    
-    background-color: white;
-    border: 1px solid   rgb(138, 170, 190, 0.5);
-    cursor: pointer; 
+  background-color: white;
+  border: 1px solid rgb(138, 170, 190, 0.5);
+  cursor: pointer;
 }

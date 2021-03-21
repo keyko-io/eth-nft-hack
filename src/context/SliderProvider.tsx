@@ -1,59 +1,60 @@
 import React, {
   createContext,
   ReactElement,
-  ReactNode, useCallback,
+  ReactNode,
+  useCallback,
   useContext,
   useEffect,
   useState,
-} from 'react'
-import {useNvm} from "./NvmProvider";
+} from "react";
+import { useNvm } from "./NvmProvider";
 
 interface SliderProviderValue {
-  currentIndex: number
-  next: () => void
-  prev: () => void
-  progress: string
+  currentIndex: number;
+  next: () => void;
+  prev: () => void;
+  progress: string;
 }
 
-const SliderContext = createContext({} as SliderProviderValue)
+const SliderContext = createContext({} as SliderProviderValue);
 
-function SliderProvider({children}: { children: ReactNode }): ReactElement {
-  const [currentIndex, setIndex] = useState(0)
-  const [progress, setProgress] = useState('0%')
+function SliderProvider({ children }: { children: ReactNode }): ReactElement {
+  const [currentIndex, setIndex] = useState(0);
+  const [progress, setProgress] = useState("0%");
 
-  const { DDOs } = useNvm()
+  const { DDOs } = useNvm();
 
   useEffect(() => {
-    if (progress === '0%') {
-      setProgress('100%')
+    if (progress === "0%") {
+      setProgress("100%");
     } else {
-      setProgress('0%')
+      setProgress("0%");
     }
-  }, [currentIndex])
+  }, [currentIndex]);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      console.log()
-      next()
-    }, 6000)
-    return () => clearTimeout(timer)
-  })
+      console.log();
+      next();
+    }, 6000);
+    return () => clearTimeout(timer);
+  });
 
   const numberOfIndexes = (numberOfItems: number) => {
-    return numberOfItems - 1
-  }
+    return numberOfItems - 1;
+  };
 
   const next = () => {
-    const numberOfIndex = numberOfIndexes(DDOs.length)
-    const newIndex = currentIndex === numberOfIndex ? 0 : currentIndex + 1
-    setIndex(newIndex)
-  }
+    const numberOfIndex = numberOfIndexes(DDOs.length);
+    const newIndex = currentIndex === numberOfIndex ? 0 : currentIndex + 1;
+    setIndex(newIndex);
+  };
 
   const prev = () => {
-    const numberOfIndex = numberOfIndexes(DDOs.length)
-    const newIndex = currentIndex === 0 ? numberOfIndex : currentIndex - 1
-    setIndex(newIndex)
-  }
+    const numberOfIndex = numberOfIndexes(DDOs.length);
+    const newIndex = currentIndex === 0 ? numberOfIndex : currentIndex - 1;
+    setIndex(newIndex);
+  };
 
   return (
     <SliderContext.Provider
@@ -62,14 +63,14 @@ function SliderProvider({children}: { children: ReactNode }): ReactElement {
           currentIndex,
           next,
           prev,
-          progress
+          progress,
         } as SliderProviderValue
       }
     >
       {children}
     </SliderContext.Provider>
-  )
+  );
 }
 
-const useSlider = (): SliderProviderValue => useContext(SliderContext)
-export {SliderProvider, useSlider, SliderContext}
+const useSlider = (): SliderProviderValue => useContext(SliderContext);
+export { SliderProvider, useSlider, SliderContext };

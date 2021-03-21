@@ -1,45 +1,44 @@
-import React from 'react'
-import { useDocker } from '../../../context/DockProvider'
-import { useSlider } from '../../../context/SliderProvider'
-import BigEmoji from '../../atoms/BigEmoji'
-import Emoji from '../../atoms/Emoji'
-import EyeButton from '../../atoms/EyeButton'
-import RoundButton from '../../atoms/RoundButton'
-import RoundButtonLeft from '../../atoms/RoundButtonLeft'
-import ButtonActionGrid from '../ButtonActionGrid'
-import styles from './SwipeBar.module.scss'
+import React from "react";
+import { useDocker } from "../../../context/DockProvider";
+import { useSlider } from "../../../context/SliderProvider";
+import BigEmoji from "../../atoms/BigEmoji";
+import Emoji from "../../atoms/Emoji";
+import EyeButton from "../../atoms/EyeButton";
+import RoundButton from "../../atoms/RoundButton";
+import RoundButtonLeft from "../../atoms/RoundButtonLeft";
+import ButtonActionGrid from "../ButtonActionGrid";
+import styles from "./SwipeBar.module.scss";
 
 const SwipeBar: React.FC = () => {
-  const { prev, next } = useSlider()
+  const { prev, next } = useSlider();
 
-
-  const { toggleActive } = useDocker()
+  const { toggleActive } = useDocker();
 
   return (
     <div className={styles.grid}>
       <div className={styles.alignRight}>
         <RoundButton onClick={prev}>
-          <Emoji emoji={'👈'} label={'dislike'} />
+          <Emoji emoji={"👈"} label={"dislike"} />
         </RoundButton>
       </div>
       <div className={styles.alignRight}>
         <RoundButton onClick={prev}>
-          <Emoji emoji={'👎'} label={'dislike'} />
+          <Emoji emoji={"👎"} label={"dislike"} />
         </RoundButton>
       </div>
       <div>
         <EyeButton onClick={toggleActive}>
-          <BigEmoji emoji={'👁'} label={'like'} />
+          <BigEmoji emoji={"👁"} label={"like"} />
         </EyeButton>
       </div>
       <div className={styles.alignLeft}>
         <RoundButtonLeft onClick={next}>
-          <Emoji emoji={'👍'} label={'like'} />
+          <Emoji emoji={"👍"} label={"like"} />
         </RoundButtonLeft>
       </div>
       <div className={styles.alignLeft}>
         <RoundButtonLeft onClick={next}>
-          <Emoji emoji={'👉'} label={'like'} />
+          <Emoji emoji={"👉"} label={"like"} />
         </RoundButtonLeft>
       </div>
       {/* <div className={styles.madeByWrapper}>
@@ -48,8 +47,7 @@ const SwipeBar: React.FC = () => {
         </div>
       </div> */}
     </div>
+  );
+};
 
-  )
-}
-
-export default SwipeBar
+export default SwipeBar;

@@ -1,7 +1,7 @@
 // Colors
 $brand-white: #fff;
-$brand-grey: #424B5A;
-$brand-light-grey: #C4C4C4;
+$brand-grey: #424b5a;
+$brand-light-grey: #c4c4c4;
 
 $brand-pink: #7834f9;
 $brand-purple: #7834f9;
@@ -13,12 +13,12 @@ $brand-gradient: linear-gradient(to right bottom, $brand-purple, $brand-pink);
 $body-background: darken($brand-white, 1%);
 
 // Fonts
-$font-family-base: 'Sharp Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-  sans-serif;
-$font-family-title: 'Sharp Sans Display', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+$font-family-base: "Sharp Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
   Helvetica, Arial, sans-serif;
-$font-family-monospace: 'Fira Code', 'Fira Mono', Menlo, Monaco, Consolas, 'Courier New',
-  monospace;
+$font-family-title: "Sharp Sans Display", -apple-system, BlinkMacSystemFont,
+  "Segoe UI", Helvetica, Arial, sans-serif;
+$font-family-monospace: "Fira Code", "Fira Mono", Menlo, Monaco, Consolas,
+  "Courier New", monospace;
 
 $font-size-root: 16px;
 $font-size-base: 1rem;
